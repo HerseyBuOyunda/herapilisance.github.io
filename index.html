@@ -46,15 +46,40 @@
             font-size: 24px;
             margin-top: 0;
         }
+        h2 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
         p {
             font-size: 16px;
-            margin: 20px 0;
+            margin: 15px 0;
             padding-left: 10px;
             color: #dddddd;
         }
         strong {
             color: #ff3333;
-            font-size: 18px;
+            font-size: 17px;
+        }
+        /* Loader Grid Yapısı */
+        .loader-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+            padding-left: 10px;
+        }
+        .loader-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
         }
         hr {
             border: 0;
@@ -78,8 +103,25 @@
         
         <p><strong>1.</strong> Bu proje Herşey Bu Oyunda tarafından geliştirilmektedir ve tüm hakları saklıdır.</p>
         
-        <p><strong>2.</strong> Bu mod ve kaynak kodları, Minecraft mod paketlerinde (Modpacks) ücretsiz olarak kullanılabilir ve dağıtılabilir.</p>
+        <p><strong>2.</strong> Bu mod, entegre Quit Framework yapısı ve tüm kaynak kodları; aşağıda listelenen tüm Mod Loader altyapılarında ve Minecraft mod paketlerinde (Modpacks) ücretsiz olarak kullanılabilir, kurulabilir ve dağıtılabilir.</p>
         
+        <h2>📦 Desteklenen Tüm Mod Yükleyiciler (Loaders)</h2>
+        <div class="loader-grid">
+            <div class="loader-item" style="color: #ffb266;">Fabric</div>
+            <div class="loader-item" style="color: #99ccff;">Forge</div>
+            <div class="loader-item" style="color: #ff9933;">NeoForge</div>
+            <div class="loader-item" style="color: #a0a0a0;">Babric</div>
+            <div class="loader-item" style="color: #66ff66;">BTA (Babric)</div>
+            <div class="loader-item" style="color: #9999ff;">Java Agent</div>
+            <div class="loader-item" style="color: #b3b3b3;">Legacy Fabric</div>
+            <div class="loader-item" style="color: #99ccff;">LiteLoader</div>
+            <div class="loader-item" style="color: #808080;">Risugami's ModLoader</div>
+            <div class="loader-item" style="color: #ff66b2;">NilLoader</div>
+            <div class="loader-item" style="color: #3399ff;">Ornithe</div>
+            <div class="loader-item" style="color: #cc99ff;">Quilt</div>
+            <div class="loader-item" style="color: #99ffcc;">Rift</div>
+        </div>
+
         <p><strong>3.</strong> Kaynak kodların değiştirilmiş versiyonları, asıl yapımcıya (Herşey Bu Oyunda / HerAPI) görünür bir şekilde atıfta bulunulmadan (kredi verilmeden) başka platformlarda paylaşılamaz veya satılamaz.</p>
 
         <hr>
