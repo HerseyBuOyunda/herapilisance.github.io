@@ -3,132 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HerAPI Özel Lisans Sözleşmesi</title>
-    
-    <link rel="icon" type="image/png" href="favicon.png">
-
+    <title>HerAPI | Lisans Sözleşmesi</title>
     <style>
-        html {
-            height: 100%;
-        }
-        body { 
-            font-family: Arial, sans-serif; 
-            line-height: 1.6; 
+        body {
             margin: 0;
-            padding: 40px 20px;
-            min-height: 100%;
-            box-sizing: border-box;
+            padding: 20px;
+            /* Arka plan dokusu ve koyu renk */
             background-image: url('https://herseybuoyunda.github.io/hbocdn.github.io/darkLoadingTexture.png');
-            background-repeat: repeat;
-            color: #ffffff; 
-        }
-        .container { 
-            max-width: 800px; 
-            margin: auto; 
-            padding: 30px; 
-            background: rgba(30, 30, 30, 0.94); 
-            border-radius: 12px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.7);
-            border: 1px solid #2a2a2a;
-        }
-        .logo-container {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .logo-container img {
-            max-width: 320px;
-            height: auto;
-        }
-        h1 { 
-            color: #ff3333; 
-            border-bottom: 2px solid #333; 
-            padding-bottom: 15px; 
-            font-size: 24px;
-            margin-top: 0;
-        }
-        h2 {
+            background-color: #121212;
             color: #ffffff;
-            font-size: 18px;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #444;
-            padding-bottom: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
         }
-        p {
-            font-size: 16px;
-            margin: 15px 0;
-            padding-left: 10px;
-            color: #dddddd;
+
+        .container {
+            background: rgb(30, 30, 30);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            max-width: 700px;
+            width: 100%;
         }
-        strong {
-            color: #ff3333;
-            font-size: 17px;
+
+        .logo {
+            display: block;
+            max-width: 250px;
+            margin: 0 auto 30px auto;
         }
-        /* Loader Grid Yapısı */
-        .loader-grid {
+
+        h1 { color: #ff4444; font-size: 22px; text-align: center; }
+        h2 { font-size: 16px; color: #fff; margin-top: 30px; border-bottom: 1px solid #444; padding-bottom: 5px; }
+        
+        p { color: #d0d0d0; line-height: 1.6; font-size: 14px; }
+        
+        .loaders {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
             gap: 10px;
-            margin: 15px 0;
-            padding-left: 10px;
+            margin-top: 15px;
         }
-        .loader-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 14px;
+        
+        .box {
+            padding: 10px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #e0e0e0;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.1);
         }
-        hr {
-            border: 0;
-            border-top: 1px solid #333;
-            margin: 30px 0;
-        }
+
+        /* Renkli Kutucuklar */
+        .fabric { background: #e09d00; }
+        .forge { background: #b86000; }
+        .neoforge { background: #008f8f; }
+        .babric { background: #8844ff; }
+        .quilt { background: #88b04b; }
+        .rift { background: #ff4444; }
+        .default { background: #333333; }
+
         .footer {
+            margin-top: 50px;
             text-align: center;
             font-size: 12px;
-            color: #ff3333;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="https://cdn.modrinth.com/data/cached_images/3bff1c3b2cb491bd80e9a5aa9e9447863442c73b.png" alt="HerAPI Logo">
-        </div>
 
+    <div class="container">
+        <img src="https://cdn.modrinth.com/data/cached_images/d95aa12b4ff1cd32021e5eaf190c0c932fd5eb90.png" alt="Logo" class="logo">
+        
         <h1>🔴 HerAPI Özel Lisans Sözleşmesi (Custom License)</h1>
         
-        <p><strong>1.</strong> Bu proje Herşey Bu Oyunda tarafından geliştirilmektedir ve tüm hakları saklıdır.</p>
+        <p>1. Bu proje Herşey Bu Oyunda tarafından geliştirilmektedir ve tüm hakları saklıdır.</p>
         
-        <p><strong>2.</strong> Bu mod, entegre Quit Framework yapısı ve tüm kaynak kodları; aşağıda listelenen tüm Mod Loader altyapılarında ve Minecraft mod paketlerinde (Modpacks) ücretsiz olarak kullanılabilir, kurulabilir ve dağıtılabilir.</p>
-        
+        <p>2. Bu mod, entegre Quilt Framework yapısı ve tüm kaynak kodları; aşağıda listelenen tüm Mod Loader altyapılarında ve Minecraft mod paketlerinde (Modpacks) ücretsiz olarak kullanılabilir, kurulabilir ve dağıtılabilir.</p>
+
         <h2>📦 Desteklenen Tüm Mod Yükleyiciler (Loaders)</h2>
-        <div class="loader-grid">
-            <div class="loader-item" style="color: #ffb266;">Fabric</div>
-            <div class="loader-item" style="color: #99ccff;">Forge</div>
-            <div class="loader-item" style="color: #ff9933;">NeoForge</div>
-            <div class="loader-item" style="color: #a0a0a0;">Babric</div>
-            <div class="loader-item" style="color: #66ff66;">BTA (Babric)</div>
-            <div class="loader-item" style="color: #9999ff;">Java Agent</div>
-            <div class="loader-item" style="color: #b3b3b3;">Legacy Fabric</div>
-            <div class="loader-item" style="color: #99ccff;">LiteLoader</div>
-            <div class="loader-item" style="color: #808080;">Risugami's ModLoader</div>
-            <div class="loader-item" style="color: #ff66b2;">NilLoader</div>
-            <div class="loader-item" style="color: #3399ff;">Ornithe</div>
-            <div class="loader-item" style="color: #cc99ff;">Quilt</div>
-            <div class="loader-item" style="color: #99ffcc;">Rift</div>
+        <div class="loaders">
+            <div class="box fabric">Fabric</div>
+            <div class="box forge">Forge</div>
+            <div class="box neoforge">NeoForge</div>
+            <div class="box babric">Babric</div>
+            <div class="box default">BTA (Babric)</div>
+            <div class="box default">Java Agent</div>
+            <div class="box default">Legacy Fabric</div>
+            <div class="box default">LiteLoader</div>
+            <div class="box default">Risugami's</div>
+            <div class="box default">NilLoader</div>
+            <div class="box default">Ornithe</div>
+            <div class="box quilt">Quilt</div>
+            <div class="box rift">Rift</div>
         </div>
 
-        <p><strong>3.</strong> Kaynak kodların değiştirilmiş versiyonları, asıl yapımcıya (Herşey Bu Oyunda / HerAPI) görünür bir şekilde atıfta bulunulmadan (kredi verilmeden) başka platformlarda paylaşılamaz veya satılamaz.</p>
-
-        <hr>
+        <p style="margin-top:20px">3. Kaynak kodların değiştirilmiş versiyonları, asıl yapımcıya (Herşey Bu Oyunda / HerAPI) görünür bir şekilde atıfta bulunulmadan (kredi verilmeden) başka platformlarda paylaşılamaz veya satılamaz.</p>
 
         <div class="footer">
-            <strong>© Herşey Bu Oyunda - Tüm hakları saklıdır.</strong>
+            © Herşey Bu Oyunda - Tüm hakları saklıdır.
         </div>
     </div>
+
 </body>
 </html>
