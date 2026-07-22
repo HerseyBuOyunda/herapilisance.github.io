@@ -5,25 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HerAPI | Lisans Sözleşmesi</title>
     <style>
+        /* --- CİHAZ TEMASINA GÖRE DEĞİŞEN RENKLER --- */
+        :root {
+            --bg-texture: url('https://herseybuoyunda.github.io/hbocdn.github.io/darkLoadingTexture.png');
+            --bg-body: #121212;
+            --container-bg: rgb(30, 30, 30);
+            --text-main: #ffffff;
+            --text-desc: #d0d0d0;
+            --border-color: #444;
+            --footer-color: #666;
+            --box-default: #333333;
+        }
+
+        /* Eğer kullanıcının cihazı AÇIK (Light) moddaysa devreye girer */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-texture: none; /* Açık temada dokuyu kaldırıp sade yapıyoruz */
+                --bg-body: #f4f4f4;
+                --container-bg: #ffffff;
+                --text-main: #222222;
+                --text-desc: #555555;
+                --border-color: #ddd;
+                --footer-color: #888;
+                --box-default: #e0e0e0;
+            }
+        }
+
         body {
             margin: 0;
             padding: 20px;
-            /* Arka plan dokusu ve koyu renk */
-            background-image: url('https://herseybuoyunda.github.io/hbocdn.github.io/darkLoadingTexture.png');
-            background-color: #121212;
-            color: #ffffff;
+            background-image: var(--bg-texture);
+            background-color: var(--bg-body);
+            color: var(--text-main);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
+            transition: background 0.3s, color 0.3s;
         }
 
         .container {
-            background: rgb(30, 30, 30);
+            background: var(--container-bg);
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             max-width: 700px;
             width: 100%;
+            transition: background 0.3s;
         }
 
         .logo {
@@ -33,9 +60,9 @@
         }
 
         h1 { color: #ff4444; font-size: 22px; text-align: center; }
-        h2 { font-size: 16px; color: #fff; margin-top: 30px; border-bottom: 1px solid #444; padding-bottom: 5px; }
+        h2 { font-size: 16px; color: var(--text-main); margin-top: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
         
-        p { color: #d0d0d0; line-height: 1.6; font-size: 14px; }
+        p { color: var(--text-desc); line-height: 1.6; font-size: 14px; }
         
         .loaders {
             display: grid;
@@ -54,21 +81,21 @@
             border: 1px solid rgba(255,255,255,0.1);
         }
 
-        /* Renkli Kutucuklar */
+        /* Renkli Kutucuklar (Her iki temada da okunabilir kalır) */
         .fabric { background: #e09d00; }
         .forge { background: #b86000; }
         .neoforge { background: #008f8f; }
         .babric { background: #8844ff; }
         .quilt { background: #88b04b; }
         .rift { background: #ff4444; }
-        .default { background: #333333; }
+        .default { background: var(--box-default); color: var(--text-main); border: 1px solid var(--border-color); }
 
         .footer {
             margin-top: 50px;
             text-align: center;
             font-size: 12px;
-            color: #666;
-            border-top: 1px solid #333;
+            color: var(--footer-color);
+            border-top: 1px solid var(--border-color);
             padding-top: 15px;
         }
     </style>
